@@ -5,12 +5,13 @@ data <- readRDS(
 )
 
 library(ggplot2)
+library(cowplot)
 
 scatterplot <- 
   ggplot(data, aes(x = shield_glycans, y = ab_resistance)) +
     geom_point() +
     geom_smooth(method = lm) +
-    theme_bw()
+    theme_cowplot(12)
 
 
 
