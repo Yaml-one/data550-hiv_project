@@ -1,8 +1,3 @@
-R_LIBS_USER := C:/Users/chang/AppData/Local/R/win-library/4.5
-export R_LIBS_USER
-test:
-	Rscript -e ".libPaths()"
-
 ## hiv_report_config_default.html:	This is the final report.
 hiv_report_config_${WHICH_CONFIG}.html: code/04_render_report.R \
   hiv_report.Rmd descriptive_analysis regression_analysis
